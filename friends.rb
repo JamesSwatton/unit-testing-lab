@@ -36,3 +36,12 @@ def lend_money_to_friend(lender, lendee, amount)
   lendee[:monies] += amount
   lender[:monies] -= amount
 end
+
+
+def add_friends_snacks_together(peoples)
+  all_snacks = []
+  for friend in peoples
+    all_snacks.concat(friend[:favourites][:snacks])
+  end
+  return all_snacks
+end
