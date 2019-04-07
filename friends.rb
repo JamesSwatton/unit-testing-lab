@@ -45,3 +45,14 @@ def add_friends_snacks_together(peoples)
   end
   return all_snacks
 end
+
+
+def friends_with_no_mates(peoples)
+  no_mates = []
+  for friend in peoples
+    if friend[:friends].count == 0
+      no_mates << friend
+    end
+  end
+  return no_mates
+end
