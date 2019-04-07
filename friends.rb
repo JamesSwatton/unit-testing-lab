@@ -11,3 +11,8 @@ end
 def likes_to_eat?(person, snack)
   return person[:favourites][:snacks].include?(snack)
 end
+
+
+def add_friend(person, friend)
+  person[:friends] << friend
+end
