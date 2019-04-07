@@ -30,3 +30,9 @@ def total_friends_monies(peoples)
   end
   return total_monies
 end
+
+
+def lend_money_to_friend(lender, lendee, amount)
+  lendee[:monies] += amount
+  lender[:monies] -= amount
+end
